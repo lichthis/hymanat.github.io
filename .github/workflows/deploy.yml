@@ -72,4 +72,5 @@ jobs:
 
       - name: Deploy hexo
         run: |
-          hexo clean && hexo generate && hexo deploy
+          hexo clean
+          hexo generate && hexo deploy
