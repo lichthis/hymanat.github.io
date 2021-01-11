@@ -62,15 +62,12 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
-          npm install hexo-cli -g
-          npm install
 
-      # - name: Install dependencies
-      #   run: |
-      #     npm i -g hexo-cli
-      #     npm i
+      - name: Install dependencies
+        run: |
+          npm i -g hexo-cli
+          npm i
 
       - name: Deploy hexo
         run: |
-          hexo clean
-          hexo generate && hexo deploy
+          hexo g -d
