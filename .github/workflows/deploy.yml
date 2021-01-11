@@ -10,7 +10,7 @@ env:
   GIT_EMAIL: brogramer.lich@gmail.com
   THEME_REPO: ChrAlpha/hexo-theme-cards
   THEME_BRANCH: master
-  DEPLOY_REPO: hymanat/lich.github.io
+  DEPLOY_REPO: hymanat/hymanat.github.io
   DEPLOY_BRANCH: master
 
 jobs:
@@ -62,12 +62,13 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
-          cp _config.theme.yml themes/cards/_config.yml
+          # cp _config.theme.yml themes/cards/_config.yml
 
       - name: Install dependencies
         run: |
-          npm install
+          npm i -g hexo-cli
+          npm i
 
       - name: Deploy hexo
         run: |
-          npm run deploy
+          hexo generate && hexo deploy
