@@ -14,11 +14,11 @@ head:
   
   # 网站图标
   favicon:
-    ico: 
-    small: 
-    medium: 
-    apple_touch_icon: 
-    safari_pinned_tab: 
+    ico: /images/logo.png
+    small: /images/logo.png
+    medium: /images/logo.png
+    apple_touch_icon: /images/logo.png
+    safari_pinned_tab: /images/logo.png
   
   # 社交分享链接
   opengraph: 
@@ -46,7 +46,7 @@ head:
 navbar: 
 
   # 左侧名称显示
-  sitename: Lee
+  sitename: ...
   
   # 右侧站内导航链接
   menu: 
@@ -56,10 +56,10 @@ navbar:
       url: /tags/
     - name: 归档
       url: /archives/
-    - name: 友链
-      url: /friends/
-    - name: Page
-      url: /page/
+    # - name: 友链
+    #   url: /friends/
+    # - name: Page
+    #   url: /page/
 
   # 导航栏永远显示在屏幕顶端
   # 仅当屏幕宽度不小于 1080 px 时生效
@@ -69,13 +69,13 @@ navbar:
 cover: 
 
   # 显示在最上方 cover 处的站点名称
-  sitename: Lee
+  sitename: This is my life
 
   # 若 avatar 配置不为空，则优先使用 avatar 覆盖 sitename
   avatar: 
   
   # sitename/avatar 下方的一句话介绍
-  description: Hi, nice to meet you!
+  description: Just go!
 
 
 
@@ -138,7 +138,7 @@ meta:
   
   # 默认文章作者（可在front-matter中覆盖）
   author:
-    name: Lee
+    name: Lich
     url: https://talktome.tk
   
   # 文章创建日期

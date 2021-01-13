@@ -1,4 +1,7 @@
 
+
+# skip-render: ['README.md', 'CNAME']
+
 theme: cards
 
 # Deployment

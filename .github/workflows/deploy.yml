@@ -63,6 +63,7 @@ jobs:
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
           cp _config.theme.yml themes/cards/_config.yml
+          cp source/logo.png themes/cards/source/images/logo.png
 
       - name: Install dependencies
         run: |
